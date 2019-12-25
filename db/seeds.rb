@@ -18,13 +18,13 @@ UserService.reset_pk_sequence
 User.reset_pk_sequence
 Service.reset_pk_sequence
 
-user1 = User.create!(first_name: 'Karina', last_name: 'Macancela', email: 'karymacancela@gmail.com', password_digest: 'karina')
+user1 = User.create!(first_name: 'Karina', last_name: 'Macancela', email: 'karymacancela@gmail.com', tailor: true, zipcode: '11211', bio: 'Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here.', password_digest: 'karina')
 # user1.password = 'karina'
 
-user2 = User.create!(first_name: 'Mark', last_name: 'Jones', email: 'mjones@gmail.com', password_digest: 'mark')
+user2 = User.create!(first_name: 'Mark', last_name: 'Jones', email: 'mjones@gmail.com', tailor: true, zipcode: '10011', bio: 'Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here.', password_digest: 'mark')
 # user2.password = 'mark'
 
-user3 = User.create!(first_name: 'Emily', last_name: 'Kim', email: 'ekim@gmail.com', password_digest: 'emily')
+user3 = User.create!(first_name: 'Emily', last_name: 'Kim', email: 'ekim@gmail.com', tailor: false, zipcode: '11345', bio: 'Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here. Some description here.', password_digest: 'emily')
 # user3.password = 'emily'
 
 service1 = Service.create(name: 'Travel')

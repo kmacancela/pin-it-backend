@@ -40,4 +40,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'activerecord-reset-pk-sequence'
+gem 'activerecord-reset-pk-sequence', '~> 0.2.0'
+gem 'active_model_serializers'
+gem "jwt", "~> 2.2"
+gem 'dotenv-rails', "~> 2.7"
